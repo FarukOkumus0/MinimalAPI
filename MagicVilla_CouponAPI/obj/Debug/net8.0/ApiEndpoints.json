@@ -1,0 +1,222 @@
+[
+  {
+    "ContainingType": "MagicVilla_CouponAPI.Endpoints.CouponEndpoints",
+    "Method": "GetAllCoupon",
+    "RelativePath": "api/coupon",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MagicVilla_CouponAPI.Models.APIResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetCoupons"
+  },
+  {
+    "ContainingType": "MagicVilla_CouponAPI.Endpoints.CouponEndpoints",
+    "Method": "CreateCoupon",
+    "RelativePath": "api/coupon",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "coupon_C_DTO",
+        "Type": "MagicVilla_CouponAPI.Models.DTO.CouponCreateDto",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MagicVilla_CouponAPI.Models.APIResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "CreateCoupon"
+  },
+  {
+    "ContainingType": "MagicVilla_CouponAPI.Endpoints.CouponEndpoints",
+    "Method": "UpdateCoupon",
+    "RelativePath": "api/coupon",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "coupon_U_DTO",
+        "Type": "MagicVilla_CouponAPI.Models.DTO.CouponUpdateDto",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MagicVilla_CouponAPI.Models.APIResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "UpdateCoupon"
+  },
+  {
+    "ContainingType": "MagicVilla_CouponAPI.Endpoints.CouponEndpoints",
+    "Method": "GetCoupon",
+    "RelativePath": "api/coupon{id:int}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MagicVilla_CouponAPI.Models.APIResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetCoupon"
+  },
+  {
+    "ContainingType": "MagicVilla_CouponAPI.Endpoints.CouponEndpoints",
+    "Method": "DeleteCoupon",
+    "RelativePath": "api/coupon/{id:int}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Program\u002B\u003C\u003Ec",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_5",
+    "RelativePath": "api/coupon/special",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CouponName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Linq.IQueryable\u00601[[MagicVilla_CouponAPI.Models.Coupon, MagicVilla_CouponAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MagicVilla_CouponAPI.Endpoints.AuthEndpoints",
+    "Method": "Login",
+    "RelativePath": "api/login",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "MagicVilla_CouponAPI.Models.DTO.LoginRequestDto",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MagicVilla_CouponAPI.Models.APIResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "Login"
+  },
+  {
+    "ContainingType": "MagicVilla_CouponAPI.Endpoints.AuthEndpoints",
+    "Method": "Register",
+    "RelativePath": "api/register",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "MagicVilla_CouponAPI.Models.DTO.RegistrationRequestDto",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MagicVilla_CouponAPI.Models.APIResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "Register"
+  }
+]
